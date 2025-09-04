@@ -4,20 +4,28 @@
 
 @layer base {
   * {
-    border-color: theme('colors.slate.200');
-  }
-  
-  html {
-    font-family: 'Inter', system-ui, sans-serif;
+    border-color: rgb(75, 85, 99);
   }
   
   body {
-    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #1e40af 100%);
+    background: linear-gradient(135deg, #1a1b3e 0%, #2d1b69 50%, #4c1d95 100%);
     min-height: 100vh;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
   }
 }
 
 @layer components {
+  .gradient-border {
+    background: linear-gradient(135deg, #06b6d4, #8b5cf6);
+    padding: 1px;
+    border-radius: 16px;
+  }
+  
+  .gradient-border > div {
+    background: #1e1b4b;
+    border-radius: 15px;
+  }
+  
   .glass-effect {
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
